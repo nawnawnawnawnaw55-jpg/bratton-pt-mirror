@@ -25,7 +25,11 @@ export default async function handler(req, res) {
       .slice(0, 5)
       .map(r => ({
         name: r.author_name,
-        text: r.text.length > 180 ? r.text.substring(0, 180) + '...' : r.text,
+        text: (function(t) {
+        // Fix garbled unicode and truncate
+        t = (t || '').replace(/[-￿]/g, '').replace(/\s+/g, ' ').trim();
+        return t.length > 180 ? t.substring(0, 180) + '...' : t;
+      })(r.text),
         time: r.relative_time_description,
         rating: r.rating,
         photo: r.profile_photo_url || null

@@ -13,7 +13,7 @@
 .br-review-card:last-child{border-bottom:none}
 .br-review-stars{color:#f86f26;font-size:14px;margin-bottom:4px}
 .br-review-name{font-weight:700;font-size:13px;color:#333}
-.br-review-text{font-size:12px;color:#666;margin-top:4px;line-height:1.5}
+.br-review-text{font-size:12px;max-height:48px;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;color:#666;margin-top:4px;line-height:1.5}
 .br-review-time{font-size:10px;color:#999;margin-top:2px}
 .br-review-footer{text-align:center;padding:12px 20px;border-top:1px solid #eee}
 .br-review-btn{display:inline-block;background:#f86f26;color:#fff!important;padding:10px 24px;border-radius:25px;text-decoration:none;font-size:14px;font-weight:600;transition:background .3s}
@@ -59,6 +59,7 @@
         body.innerHTML = '<p style="text-align:center;color:#999;padding:20px">No reviews yet. Be the first!</p>';
         return;
       }
+      var fullTexts = [];
       body.innerHTML = data.reviews.map(function(r){
         return '<div class="br-review-card">' +
           '<div class="br-review-stars">' + '★'.repeat(r.rating) + '</div>' +
