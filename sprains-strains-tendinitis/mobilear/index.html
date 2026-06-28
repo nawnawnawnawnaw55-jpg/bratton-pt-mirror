@@ -675,21 +675,45 @@ body.smartphone .g5-mobile-menu{display:-ms-flexbox!important;display:-webkit-fl
 }
 
 
-/* CTA buttons - equal size, shrink text to fit */
-.g5-background-primary .uk-button{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.g5-background-primary .uk-button span{display:inline-block;white-space:nowrap;font-size:clamp(11px,1.5vw,17px)!important}
+/* CTA buttons - identical size, text scales to fit */
+.g5-background-primary .uk-button{
+  display:flex!important;align-items:center!important;justify-content:center!important;
+  height:46px!important;min-height:46px!important;max-height:46px!important;
+  white-space:nowrap!important;overflow:hidden!important;
+  padding:0 10px!important
+}
+.g5-background-primary .uk-button span{
+  display:flex!important;align-items:center!important;gap:6px!important;
+  white-space:nowrap!important;overflow:hidden!important;
+  font-size:clamp(9px,1.6vw,16px)!important;
+  line-height:1!important
+}
+.g5-background-primary .uk-button span i{font-size:clamp(10px,1.4vw,16px)!important;flex-shrink:0!important}
 @media(max-width:480px){
-  .g5-background-primary .uk-button span{font-size:clamp(10px,2.5vw,14px)!important}
+  .g5-background-primary .uk-button{height:40px!important;min-height:40px!important;max-height:40px!important;padding:0 6px!important}
+  .g5-background-primary .uk-button span{font-size:clamp(8px,2.5vw,11px)!important;gap:4px!important}
+  .g5-background-primary .uk-button span i{font-size:clamp(9px,2vw,11px)!important}
+}
+@media(max-width:360px){
+  .g5-background-primary .uk-button{height:36px!important;min-height:36px!important;max-height:36px!important;padding:0 4px!important}
+  .g5-background-primary .uk-button span{font-size:clamp(7px,3vw,10px)!important;gap:3px!important}
+  .g5-background-primary .uk-button span i{font-size:clamp(8px,2.5vw,10px)!important}
+}
+.g5-background-primary .uk-button span{
+  white-space:nowrap!important;overflow:hidden!important;text-overflow:ellipsis!important;
+  font-size:clamp(10px,1.8vw,17px)!important
+}
+@media(max-width:480px){
+  .g5-background-primary .uk-button{height:38px!important;padding:4px 6px!important}
+  .g5-background-primary .uk-button span{font-size:clamp(9px,2.8vw,12px)!important}
+}
+@media(max-width:360px){
+  .g5-background-primary .uk-button{height:34px!important;padding:2px 4px!important}
+  .g5-background-primary .uk-button span{font-size:clamp(8px,3vw,11px)!important}
 }
 
 
-/* CTA buttons - equal height, same size */
-.g5-background-primary .uk-button{display:flex!important;align-items:center!important;justify-content:center!important;min-height:44px!important;white-space:nowrap!important}
-.g5-background-primary .uk-button span{white-space:nowrap!important;font-size:clamp(11px,1.5vw,17px)!important}
-@media(max-width:480px){
-  .g5-background-primary .uk-button{min-height:40px!important;padding:6px 8px!important}
-  .g5-background-primary .uk-button span{font-size:clamp(10px,2.5vw,13px)!important}
-}
+
 
 
 
@@ -712,7 +736,7 @@ body.smartphone .g5-mobile-menu{display:-ms-flexbox!important;display:-webkit-fl
 		<div class="uk-container uk-container-center">
 			<ul class='uk-grid uk-grid-width-large-1-3 uk-grid-width-medium-1-2 uk-list uk-margin-remove uk-flex uk-flex-center g5-padding-small uk-width-1-1'>
 				<li><a href="#" class="tm-skew tm-custom-btn-gradient uk-width-1-1 uk-button g5-background-warning g5-hover-background-white g5-hover-color-primary g5-color-white g5-loadar uk-button-large g5-transition-half"><span><i class="uk-icon-calendar"></i> Request An Appointment</span> </a></li>
-				<li><a href="/services/workers-compensation-physical-therapy-slidell-la/" class="tm-skew tm-custom-btn-gradient uk-width-1-1 uk-button g5-background-warning g5-hover-background-white g5-hover-color-primary g5-color-white uk-button-large g5-transition-half"><span><i class="uk-icon-user"></i> Work Injury? Start Here</span> </a></li>
+				<li><a href="/services/workers-compensation-physical-therapy-slidell-la/" class="tm-skew tm-custom-btn-gradient uk-width-1-1 uk-button g5-background-warning g5-hover-background-white g5-hover-color-primary g5-color-white g5-loadar uk-button-large g5-transition-half"><span><i class="uk-icon-user"></i> Work Injury? Start Here</span> </a></li>
 			</ul>
 		</div>
 	</div>
