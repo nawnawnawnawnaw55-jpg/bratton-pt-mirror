@@ -1022,11 +1022,19 @@ Slidell, LA 70458</div></a>
 		<a href="https://www.facebook.com/" class="tm-skew g5-mobile-button g5-color-white g5-background-facebook" target="_blank"><span><i class="uk-icon-facebook"></i></span><span><div>Facebook</div></span></a>
 	</li>-->
 </ul>
-</div></div></header><section id="tm-home-ss">
+</div></div></header>
+<style>
+/* Desktop hero position */
+#tm-home-ss .uk-hidden-small img{
+  object-position:50% 35%!important
+}
+</style>
+
+<section id="tm-home-ss">
 	<div class="uk-hidden-small g5-hidemobile uk-slidenav-position uk-height-1-1" data-uk-slideshow="{autoplay:true,height:700,autoplayInterval:7000}">
 		<ul class="uk-slideshow uk-overlay-active">
 			<li>
-				<img src="https://blogsdir.imgix.net/2314/files/photos/tm-hero-1.jpg?crop=focalpoint&fit=crop&h=1080&w=2000&flip=h&auto=enhance" alt="physical therapy Slidell LA" class="" width="1024" height="auto" />
+				<img src="https://images.pexels.com/photos/6111589/pexels-photo-6111589.jpeg" alt="physical therapy Slidell LA" class="" width="1024" height="auto"  style="transform:scaleX(-1);object-position:50% 35%" />
 				<div class="uk-overlay-panel uk-overlay-background g5-padding-large tm-padding-large uk-flex uk-flex-middle">
 					<div style="" class="g5-padding-all uk-animation-slide-right uk-border-rounded">
 						<h2 class="uk-h1 g5-color-white tm-uppercase">Physical Therapy Before &<br> After Surgery in Slidell</h2>
@@ -1040,8 +1048,21 @@ Slidell, LA 70458</div></a>
 		</ul>
 	</div>
 	<!-- MOBILE -->
-	<div class="uk-visible-small uk-position-relative">
-		<img src="https://blogsdir.imgix.net/2314/files/photos/tm-hero-1.jpg?w=500&h=650&fit=crop&crop=focalpoint&fp-x=0.40&auto=enhance" alt="">
+	
+<style>
+/* Mobile hero zoom */
+.uk-visible-small.uk-position-relative{
+  overflow:hidden!important
+}
+.uk-visible-small.uk-position-relative > img{
+  transform:scaleX(-1) scale(1.25)!important;
+  object-fit:cover!important;
+  object-position:30% 60%!important
+}
+</style>
+
+<div class="uk-visible-small uk-position-relative">
+		<img src="https://images.pexels.com/photos/6111589/pexels-photo-6111589.jpeg" alt="">
 		<div class="uk-overlay-panel uk-overlay-background uk-block uk-flex uk-flex-middle">
 			<div style="" class="uk-animation-slide-right uk-border-rounded">
 				<h2 class="uk-text-center uk-h2 g5-color-white tm-uppercase">Physical Therapy Before & After Surgery in Slidell</h2>
