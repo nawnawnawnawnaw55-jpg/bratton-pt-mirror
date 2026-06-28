@@ -1176,5 +1176,6 @@ document.addEventListener('click', function(event) {
 </div>
 </div>
 <script>document.addEventListener("DOMContentLoaded",function(){if(window.innerWidth<769)return;var nav=document.getElementById("navbar");if(!nav)return;var navTop=document.getElementById("navbar-wrapper");if(navTop)navTop=navTop.getBoundingClientRect().top+window.scrollY;else navTop=nav.getBoundingClientRect().top+window.scrollY;var ticking=false;function update(){var w=document.getElementById("navbar-wrapper");navTop=w?w.getBoundingClientRect().top+window.scrollY:nav.getBoundingClientRect().top+window.scrollY;}window.addEventListener("scroll",function(){if(!ticking){requestAnimationFrame(function(){var s=window.scrollY>navTop-10;nav.classList.toggle("nav-sticky",s);if(!s)update();ticking=false;});ticking=true;}});window.addEventListener("resize",update);});</script>
+<script src="/wp-content/themes/1739themeG5/js/br-reviews.js"></script>
 </body>
 </html>
