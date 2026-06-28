@@ -42,7 +42,7 @@
     </div>
     <div class="br-review-body"><div class="br-review-loading">Loading reviews...</div></div>
     <div class="br-review-footer">
-      <a href="https://search.google.com/local/writereview?placeid=ChIJicdBse3mnYARzUlONkU2Rs0" target="_blank" class="br-review-btn">Leave Us a Review</a>
+      <a href="https://search.google.com/local/writereview?placeid=ChIJicdBse3mnYgRyU49RjVmRs0" target="_blank" class="br-review-btn">Leave Us a Review</a>
     </div>
   `;
   document.body.appendChild(popup);

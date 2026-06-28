@@ -1,5 +1,5 @@
 export default async function handler(req, res) {
-  const PLACE_ID = 'ChIJicdBse3mnYARzUlONkU2Rs0';
+  const PLACE_ID = 'ChIJicdBse3mnYgRyU49RjVmRs0';
   const API_KEY = process.env.GOOGLE_API_KEY;
   
   if (!API_KEY) {
