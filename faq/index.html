@@ -598,24 +598,7 @@ html .uk-nav.uk-nav-offcanvas > li.uk-active > a {
  "telephone": "9856415825"
 }
 </script>
-<script>
-window.addEventListener('mouseover', initLandbot, { once: true });
-window.addEventListener('touchstart', initLandbot, { once: true });
-var myLandbot;
-function initLandbot() {
-  if (!myLandbot) {
-    var s = document.createElement('script');s.type = 'text/javascript';s.async = true;
-    s.addEventListener('load', function() {
-      var myLandbot = new Landbot.Livechat({
-        configUrl: 'https://storage.googleapis.com/landbot.pro/v3/H-1403315-1HX8LW334BVOGYDM/index.json',
-      });
-    });
-    s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.js';
-    var x = document.getElementsByTagName('script')[0];
-    x.parentNode.insertBefore(s, x);
-  }
-}
-</script>
+
   <script>
     var clientip = '172.59.187.66';
   </script>
@@ -685,6 +668,44 @@ body.smartphone .g5-mobile-menu{display:-ms-flexbox!important;display:-webkit-fl
 .uk-sticky-placeholder + #navbar {
   box-shadow: 0 2px 8px rgba(0,0,0,0.15) !important;
 }
+
+/* Responsive typography */
+.g5-background-primary .uk-button span{white-space:nowrap;font-size:clamp(12px,2.5vw,17px)}
+@media(max-width:480px){
+  .uk-h1,h1{font-size:clamp(24px,6vw,36px)!important;line-height:1.2!important}
+  .uk-h2,h2{font-size:clamp(20px,5vw,28px)!important;line-height:1.3!important}
+  .uk-h3,h3{font-size:clamp(16px,4vw,22px)!important}
+  .uk-text-large{font-size:14px!important}
+  .uk-button-large{font-size:clamp(11px,3vw,15px)!important;padding:8px 12px!important}
+  #header .uk-text-large{font-size:12px!important}
+  #header .uk-h2{font-size:15px!important}
+}
+@media(max-width:360px){
+  .uk-h1,h1{font-size:clamp(22px,6vw,28px)!important}
+  .uk-h2,h2{font-size:clamp(18px,5vw,24px)!important}
+  .uk-button-large{font-size:clamp(10px,3vw,13px)!important;padding:6px 10px!important}
+  .g5-background-primary .uk-button span{font-size:clamp(10px,3vw,14px)}
+}
+
+
+/* CTA buttons - equal size, shrink text to fit */
+.g5-background-primary .uk-button{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.g5-background-primary .uk-button span{display:inline-block;white-space:nowrap;font-size:clamp(11px,1.5vw,17px)!important}
+@media(max-width:480px){
+  .g5-background-primary .uk-button span{font-size:clamp(10px,2.5vw,14px)!important}
+}
+
+
+/* CTA buttons - equal height, same size */
+.g5-background-primary .uk-button{display:flex!important;align-items:center!important;justify-content:center!important;min-height:44px!important;white-space:nowrap!important}
+.g5-background-primary .uk-button span{white-space:nowrap!important;font-size:clamp(11px,1.5vw,17px)!important}
+@media(max-width:480px){
+  .g5-background-primary .uk-button{min-height:40px!important;padding:6px 8px!important}
+  .g5-background-primary .uk-button span{font-size:clamp(10px,2.5vw,13px)!important}
+}
+
+
+
 </style>
 <div class="uk-grid uk-grid-collapse uk-grid-width-1-3 g5-mobile-menu">
 <div class="">
