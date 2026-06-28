@@ -1203,55 +1203,17 @@ document.addEventListener('click', function(event) {
 <script type="text/javascript" src="/wp-content/themes/gfive/js/media.match.min.js" id="media-match-js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/enquire.js/2.1.6/enquire.min.js" id="enquire-js"></script>
 <script type="text/javascript" src="/wp-content/themes/gfive/js/g5_master.js" id="g5_master-js"></script>
-<script type="text/javascript" src="/wp-content/themes/gfive/js/g5_style.js" id="g5style-js"></script>
-<style>
-  .privacy-bar {
-    --privacybar-bg-color: #111112;
-    --privacybar-text-color: #e8e8ea;
-    --privacybar-link-color: #d0d0d5;
-    --privacybar-link-hover-color: #ffffff;
-
-    background-color: var(--privacybar-bg-color);
-    padding: 0.65rem 1.5rem;
-    font-size: 0.8rem;
-  }
-
-  .privacy-bar__link {
-    color: var(--privacybar-link-color);
-    text-decoration: none;
-    padding: 0.2em 0.4em;
-    display: inline-block;
-  }
-
-  .privacy-bar__link:hover {
-    color: var(--privacybar-link-hover-color);
-    text-decoration: underline;
-  }
-
-  /* Pipe separators between columns — desktop only */
-  @media (min-width: 960px) {
-    .privacy-bar__grid > div + div::before {
-      content: '|';
-      position: absolute;
-      left: 0;
-      top: 50%;
-      transform: translateX(-50%) translateY(-50%);
-      color: var(--privacybar-text-color);
-      opacity: 0.3;
-    }
-
-    .privacy-bar__grid > div {
-      position: relative;
-    }
-  }
 
 
-
-
-
-</div>
-</div>
-<script>document.addEventListener("DOMContentLoaded",function(){if(window.innerWidth<769)return;var nav=document.getElementById("navbar");if(!nav)return;var navTop=document.getElementById("navbar-wrapper");if(navTop)navTop=navTop.getBoundingClientRect().top+window.scrollY;else navTop=nav.getBoundingClientRect().top+window.scrollY;var ticking=false;function update(){var w=document.getElementById("navbar-wrapper");navTop=w?w.getBoundingClientRect().top+window.scrollY:nav.getBoundingClientRect().top+window.scrollY;}window.addEventListener("scroll",function(){if(!ticking){requestAnimationFrame(function(){var s=window.scrollY>navTop-10;nav.classList.toggle("nav-sticky",s);if(!s)update();ticking=false;});ticking=true;}});window.addEventListener("resize",update);});</script>
 <script src="/wp-content/themes/1739themeG5/js/br-reviews.js"></script>
+<style>
+@media(min-width:769px){
+  .br-trigger-btn{position:fixed;bottom:20px;right:20px;z-index:99999;background:#2257A6;color:#fff;border:none;border-radius:50px;padding:12px 22px;font-size:14px;font-weight:700;cursor:pointer;box-shadow:0 4px 15px rgba(0,0,0,0.3);font-family:Montserrat,sans-serif}
+  .br-trigger-btn.br-hidden{display:none!important}.br-trigger-btn:hover{transform:scale(1.05);background:#1a447d}
+}
+@media(max-width:768px){.br-trigger-btn{display:none}}
+</style>
+<button class="br-trigger-btn" onclick="var t=this;var p=document.querySelector('.br-review-popup');if(!p){t.classList.add('br-hidden');var s=document.createElement('script');s.src='/wp-content/themes/1739themeG5/js/br-reviews.js';s.onload=function(){var pp=document.querySelector('.br-review-popup');if(pp)pp.classList.add('show')};document.body.appendChild(s)}else if(p.classList.contains('show')){p.classList.remove('show');t.classList.remove('br-hidden')}else{p.classList.add('show');t.classList.add('br-hidden')}">★★★★★ Reviews</button>
+<script>document.addEventListener("DOMContentLoaded",function(){if(window.innerWidth<769)return;var nav=document.getElementById("navbar");if(!nav)return;var navTop=document.getElementById("navbar-wrapper");if(navTop)navTop=navTop.getBoundingClientRect().top+window.scrollY;else navTop=nav.getBoundingClientRect().top+window.scrollY;var ticking=false;function update(){var w=document.getElementById("navbar-wrapper");navTop=w?w.getBoundingClientRect().top+window.scrollY:nav.getBoundingClientRect().top+window.scrollY;}window.addEventListener("scroll",function(){if(!ticking){requestAnimationFrame(function(){var s=window.scrollY>navTop-10;nav.classList.toggle("nav-sticky",s);if(!s)update();ticking=false;});ticking=true;}});window.addEventListener("resize",update);});</script>
 </body>
 </html>
