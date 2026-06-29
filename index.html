@@ -32,7 +32,9 @@
 	<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
 	<![endif]-->
 	<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
-	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }@media(max-width:768px){
+  
+</style>
 	
 	<!-- This site is optimized with the Yoast SEO plugin v27.9 - https://yoast.com/product/yoast-seo-wordpress/ -->
 	<meta name="description" content="Home - Bratton Physical Therapy - conveniently located for Slidell Call (985) 641-5825" />
@@ -740,6 +742,17 @@ body.smartphone .g5-mobile-menu{display:-ms-flexbox!important;display:-webkit-fl
 
 
 
+}
+
+
+
+@media(max-width:768px){
+  .tm-services-animation{min-height:240px!important}
+  .tm-services-animation img{height:130px!important}
+}
+@media(max-width:768px){a[data-uk-slider-item].uk-button-small{font-size:14px!important;padding:8px 16px!important;border-radius:25px!important;box-shadow:0 2px 6px rgba(0,0,0,0.15)!important;margin:2px!important}a.uk-slidenav-previous,a.uk-slidenav-next{font-size:36px!important;width:48px!important;height:48px!important;line-height:48px!important}}
+@media(max-width:768px){.tm-services-animation img{aspect-ratio:1/1!important;object-fit:cover!important;width:100%!important}}
+@media(max-width:768px){#tm-home-ss .uk-visible-small img,#tm-home-ss .uk-slideshow{min-height:350px!important;object-fit:cover!important}}
 </style>
 </head><body class="home wp-singular page-template-default page page-id-3 wp-theme-gfive wp-child-theme-1739themeG5 uk-height-1-1 page-home desktop">
 <script>if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)||window.innerWidth<=768)document.body.className+=" mobile handheld smartphone";</script>
@@ -1025,7 +1038,7 @@ Slidell, LA 70458</div></a>
 <style>
 /* Desktop hero position */
 #tm-home-ss .uk-hidden-small img{
-  object-position:50% 35%!important
+  object-position:50% 60%!important
 }
 </style>
 
@@ -1033,7 +1046,7 @@ Slidell, LA 70458</div></a>
 	<div class="uk-hidden-small g5-hidemobile uk-slidenav-position uk-height-1-1" data-uk-slideshow="{autoplay:true,height:700,autoplayInterval:7000}">
 		<ul class="uk-slideshow uk-overlay-active">
 			<li>
-				<img src="https://images.pexels.com/photos/6111589/pexels-photo-6111589.jpeg" alt="physical therapy Slidell LA" class="" width="1024" height="auto"  style="transform:scaleX(-1);object-position:50% 35%" />
+				<img src="https://images.pexels.com/photos/6111589/pexels-photo-6111589.jpeg" alt="physical therapy Slidell LA" class="" width="1024" height="auto"  style="transform:scaleX(-1);object-position:50% 60%" />
 				<div class="uk-overlay-panel uk-overlay-background g5-padding-large tm-padding-large uk-flex uk-flex-middle">
 					<div style="" class="g5-padding-all uk-animation-slide-right uk-border-rounded">
 						<h2 class="uk-h1 g5-color-white tm-uppercase">Physical Therapy Before &<br> After Surgery in Slidell</h2>
@@ -1056,7 +1069,7 @@ Slidell, LA 70458</div></a>
 .uk-visible-small.uk-position-relative > img{
   transform:scaleX(-1) scale(1.25)!important;
   object-fit:cover!important;
-  object-position:30% 60%!important
+  object-position:30% 80%!important
 }
 </style>
 
@@ -1272,16 +1285,16 @@ Slidell, LA 70458</div></a>
 </section><section id="tm-services" class='uk-block g5-background-primary'>
 	<div class="uk-container-center uk-width-large-1-1 uk-width-medium-1-1 uk-width-small-1-1 uk-width-xlarge-3-4 g5-padding-left g5-padding-right tm-padding-large-all">
         <h1 class="uk-text-center-small g5-color-white uk-text-center uk-margin-large-bottom">How We Treat:</h1>
-        <div class="uk-slidenav-position" data-uk-slider={autoplay:true,autoplayInterval:3000}>
+        <div class="uk-slidenav-position" data-uk-slider="{autoplay:true,autoplayInterval:3000}">
             <div class="uk-slider-container uk-width-medium-9-10 uk-align-center">
                 <ul class="g5-padding-bottom uk-slider uk-grid-width-small-1-1 uk-grid-width-medium-1-2 uk-grid-width-large-1-3 uk-grid uk-text-center" data-uk-grid-margin>
                     
 <li>
-<div class='tm-services-animation uk-panel uk-panel-box uk-text-center uk-border-rounded' style='background:#efefef;'>
+<div class='tm-services-animation uk-panel uk-panel-box uk-text-center uk-border-rounded' style='background:#efefef;border-radius:8px;overflow:hidden'>
     <a href='/services/patient-education/' class='g5-hover-color-white'>
         <div class='uk-text-center ' data-mh='tm-service-title'> Patient Education </div>
         <div class='uk-panel-teaser uk-margin-top'>
-            <img src='/files/services/patient-education.jpg' width='' height='' alt='physical therapy Slidell LA' class=''>
+            <img src='/files/services/patient-education.jpg'  alt='physical therapy Slidell LA' class=''>
         </div>
         <div class=''>
         <p><a href='/services/patient-education/' target='_parent' class='uk-border-pill tm-skew tm-appt-button-white tm-uppercase uk-button g5-background-success g5-hover-background-primary g5-hover-color-primary g5-color-white g5-transition-half'> <span>Learn More </a></span></p>
@@ -1291,11 +1304,11 @@ Slidell, LA 70458</div></a>
 </li>
 
 <li>
-<div class='tm-services-animation uk-panel uk-panel-box uk-text-center uk-border-rounded' style='background:#efefef;'>
+<div class='tm-services-animation uk-panel uk-panel-box uk-text-center uk-border-rounded' style='background:#efefef;border-radius:8px;overflow:hidden'>
     <a href='/services/therapeutic-exercise/' class='g5-hover-color-white'>
         <div class='uk-text-center ' data-mh='tm-service-title'> Therapeutic Exercise </div>
         <div class='uk-panel-teaser uk-margin-top'>
-            <img src='/files/services/therapeutic-exercise.jpg' width='' height='' alt='physical therapy Slidell LA' class=''>
+            <img src='/files/services/therapeutic-exercise.jpg'  alt='physical therapy Slidell LA' class=''>
         </div>
         <div class=''>
         <p><a href='/services/therapeutic-exercise/' target='_parent' class='uk-border-pill tm-skew tm-appt-button-white tm-uppercase uk-button g5-background-success g5-hover-background-primary g5-hover-color-primary g5-color-white g5-transition-half'> <span>Learn More </a></span></p>
@@ -1305,11 +1318,11 @@ Slidell, LA 70458</div></a>
 </li>
 
 <li>
-<div class='tm-services-animation uk-panel uk-panel-box uk-text-center uk-border-rounded' style='background:#efefef;'>
+<div class='tm-services-animation uk-panel uk-panel-box uk-text-center uk-border-rounded' style='background:#efefef;border-radius:8px;overflow:hidden'>
     <a href='/services/strength-conditioning/' class='g5-hover-color-white'>
         <div class='uk-text-center ' data-mh='tm-service-title'> Strength & Conditioning </div>
         <div class='uk-panel-teaser uk-margin-top'>
-            <img src='/files/services/strength-conditioning.jpg' width='' height='' alt='physical therapy Slidell LA' class=''>
+            <img src='/files/services/strength-conditioning.jpg'  alt='physical therapy Slidell LA' class=''>
         </div>
         <div class=''>
         <p><a href='/services/strength-conditioning/' target='_parent' class='uk-border-pill tm-skew tm-appt-button-white tm-uppercase uk-button g5-background-success g5-hover-background-primary g5-hover-color-primary g5-color-white g5-transition-half'> <span>Learn More </a></span></p>
@@ -1319,11 +1332,11 @@ Slidell, LA 70458</div></a>
 </li>
 
 <li>
-<div class='tm-services-animation uk-panel uk-panel-box uk-text-center uk-border-rounded' style='background:#efefef;'>
+<div class='tm-services-animation uk-panel uk-panel-box uk-text-center uk-border-rounded' style='background:#efefef;border-radius:8px;overflow:hidden'>
     <a href='/services/dry-needling-certified/' class='g5-hover-color-white'>
         <div class='uk-text-center ' data-mh='tm-service-title'> Dry Needling Certified </div>
         <div class='uk-panel-teaser uk-margin-top'>
-            <img src='/files/services/dry-needling-certified.jpg' width='' height='' alt='physical therapy Slidell LA' class=''>
+            <img src='/files/services/dry-needling-certified.jpg'  alt='physical therapy Slidell LA' class=''>
         </div>
         <div class=''>
         <p><a href='/services/dry-needling-certified/' target='_parent' class='uk-border-pill tm-skew tm-appt-button-white tm-uppercase uk-button g5-background-success g5-hover-background-primary g5-hover-color-primary g5-color-white g5-transition-half'> <span>Learn More </a></span></p>
@@ -1333,11 +1346,11 @@ Slidell, LA 70458</div></a>
 </li>
 
 <li>
-<div class='tm-services-animation uk-panel uk-panel-box uk-text-center uk-border-rounded' style='background:#efefef;'>
+<div class='tm-services-animation uk-panel uk-panel-box uk-text-center uk-border-rounded' style='background:#efefef;border-radius:8px;overflow:hidden'>
     <a href='/services/blood-flow-restriction-therapy/' class='g5-hover-color-white'>
         <div class='uk-text-center ' data-mh='tm-service-title'> Blood Flow Restriction Therapy </div>
         <div class='uk-panel-teaser uk-margin-top'>
-            <img src='/files/services/blood-flow-restriction-therapy.jpg' width='' height='' alt='physical therapy Slidell LA' class=''>
+            <img src='/files/services/blood-flow-restriction-therapy.jpg'  alt='physical therapy Slidell LA' class=''>
         </div>
         <div class=''>
         <p><a href='/services/blood-flow-restriction-therapy/' target='' class='uk-border-pill tm-skew tm-appt-button-white tm-uppercase uk-button g5-background-success g5-hover-background-primary g5-hover-color-primary g5-color-white g5-transition-half'> <span>Learn More </a></span></p>
@@ -1347,11 +1360,11 @@ Slidell, LA 70458</div></a>
 </li>
 
 <li>
-<div class='tm-services-animation uk-panel uk-panel-box uk-text-center uk-border-rounded' style='background:#efefef;'>
+<div class='tm-services-animation uk-panel uk-panel-box uk-text-center uk-border-rounded' style='background:#efefef;border-radius:8px;overflow:hidden'>
     <a href='/services/mckenzie-method/' class='g5-hover-color-white'>
         <div class='uk-text-center ' data-mh='tm-service-title'> McKenzie Method® </div>
         <div class='uk-panel-teaser uk-margin-top'>
-            <img src='/files/services/mckenzie-method.jpg' width='' height='' alt='physical therapy Slidell LA' class=''>
+            <img src='/files/services/mckenzie-method.jpg'  alt='physical therapy Slidell LA' class=''>
         </div>
         <div class=''>
         <p><a href='/services/mckenzie-method/' target='_parent' class='uk-border-pill tm-skew tm-appt-button-white tm-uppercase uk-button g5-background-success g5-hover-background-primary g5-hover-color-primary g5-color-white g5-transition-half'> <span>Learn More </a></span></p>
@@ -1361,11 +1374,11 @@ Slidell, LA 70458</div></a>
 </li>
 
 <li>
-<div class='tm-services-animation uk-panel uk-panel-box uk-text-center uk-border-rounded' style='background:#efefef;'>
+<div class='tm-services-animation uk-panel uk-panel-box uk-text-center uk-border-rounded' style='background:#efefef;border-radius:8px;overflow:hidden'>
     <a href='/services/mulligan-technique/' class='g5-hover-color-white'>
         <div class='uk-text-center ' data-mh='tm-service-title'> Mulligan Technique </div>
         <div class='uk-panel-teaser uk-margin-top'>
-            <img src='/files/services/mulligan-technique.jpg' width='' height='' alt='physical therapy Slidell LA' class=''>
+            <img src='/files/services/mulligan-technique.jpg'  alt='physical therapy Slidell LA' class=''>
         </div>
         <div class=''>
         <p><a href='/services/mulligan-technique/' target='_parent' class='uk-border-pill tm-skew tm-appt-button-white tm-uppercase uk-button g5-background-success g5-hover-background-primary g5-hover-color-primary g5-color-white g5-transition-half'> <span>Learn More </a></span></p>
@@ -1375,11 +1388,11 @@ Slidell, LA 70458</div></a>
 </li>
 
 <li>
-<div class='tm-services-animation uk-panel uk-panel-box uk-text-center uk-border-rounded' style='background:#efefef;'>
+<div class='tm-services-animation uk-panel uk-panel-box uk-text-center uk-border-rounded' style='background:#efefef;border-radius:8px;overflow:hidden'>
     <a href='/services/cupping/' class='g5-hover-color-white'>
         <div class='uk-text-center ' data-mh='tm-service-title'> Cupping </div>
         <div class='uk-panel-teaser uk-margin-top'>
-            <img src='/files/services/cupping.jpg' width='' height='' alt='physical therapy Slidell LA' class=''>
+            <img src='/files/services/cupping.jpg'  alt='physical therapy Slidell LA' class=''>
         </div>
         <div class=''>
         <p><a href='/services/cupping/' target='_parent' class='uk-border-pill tm-skew tm-appt-button-white tm-uppercase uk-button g5-background-success g5-hover-background-primary g5-hover-color-primary g5-color-white g5-transition-half'> <span>Learn More </a></span></p>
@@ -1389,11 +1402,11 @@ Slidell, LA 70458</div></a>
 </li>
 
 <li>
-<div class='tm-services-animation uk-panel uk-panel-box uk-text-center uk-border-rounded' style='background:#efefef;'>
+<div class='tm-services-animation uk-panel uk-panel-box uk-text-center uk-border-rounded' style='background:#efefef;border-radius:8px;overflow:hidden'>
     <a href='/services/gait-balance-training/' class='g5-hover-color-white'>
         <div class='uk-text-center ' data-mh='tm-service-title'> Gait/Balance Training </div>
         <div class='uk-panel-teaser uk-margin-top'>
-            <img src='/files/services/gait-balance-training.jpg' width='' height='' alt='physical therapy Slidell LA' class=''>
+            <img src='/files/services/gait-balance-training.jpg'  alt='physical therapy Slidell LA' class=''>
         </div>
         <div class=''>
         <p><a href='/services/gait-balance-training/' target='_parent' class='uk-border-pill tm-skew tm-appt-button-white tm-uppercase uk-button g5-background-success g5-hover-background-primary g5-hover-color-primary g5-color-white g5-transition-half'> <span>Learn More </a></span></p>
@@ -1403,11 +1416,11 @@ Slidell, LA 70458</div></a>
 </li>
 
 <li>
-<div class='tm-services-animation uk-panel uk-panel-box uk-text-center uk-border-rounded' style='background:#efefef;'>
+<div class='tm-services-animation uk-panel uk-panel-box uk-text-center uk-border-rounded' style='background:#efefef;border-radius:8px;overflow:hidden'>
     <a href='/services/vasopneumatic-compression/' class='g5-hover-color-white'>
         <div class='uk-text-center ' data-mh='tm-service-title'> Vasopneumatic Compression </div>
         <div class='uk-panel-teaser uk-margin-top'>
-            <img src='/files/photos/vaso.png?h=130&w=200&fit=crop&crop=focalpoint&fp-y=0.12' width='' height='' alt='physical therapy Slidell LA' class=''>
+            <img src='/files/photos/vaso.png?h=130&w=200&fit=crop&crop=focalpoint&fp-y=0.12'  alt='physical therapy Slidell LA' class=''>
         </div>
         <div class=''>
         <p><a href='/services/vasopneumatic-compression/' target='' class='uk-border-pill tm-skew tm-appt-button-white tm-uppercase uk-button g5-background-success g5-hover-background-primary g5-hover-color-primary g5-color-white g5-transition-half'> <span>Learn More </a></span></p>
@@ -1417,11 +1430,11 @@ Slidell, LA 70458</div></a>
 </li>
 
 <li>
-<div class='tm-services-animation uk-panel uk-panel-box uk-text-center uk-border-rounded' style='background:#efefef;'>
+<div class='tm-services-animation uk-panel uk-panel-box uk-text-center uk-border-rounded' style='background:#efefef;border-radius:8px;overflow:hidden'>
     <a href='/services/moist-heat-ice/' class='g5-hover-color-white'>
         <div class='uk-text-center ' data-mh='tm-service-title'> Moist Heat / Ice </div>
         <div class='uk-panel-teaser uk-margin-top'>
-            <img src='/files/services/moist-heat-ice.jpg' width='' height='' alt='physical therapy Slidell LA' class=''>
+            <img src='/files/services/moist-heat-ice.jpg'  alt='physical therapy Slidell LA' class=''>
         </div>
         <div class=''>
         <p><a href='/services/moist-heat-ice/' target='_parent' class='uk-border-pill tm-skew tm-appt-button-white tm-uppercase uk-button g5-background-success g5-hover-background-primary g5-hover-color-primary g5-color-white g5-transition-half'> <span>Learn More </a></span></p>
@@ -1431,11 +1444,11 @@ Slidell, LA 70458</div></a>
 </li>
 
 <li>
-<div class='tm-services-animation uk-panel uk-panel-box uk-text-center uk-border-rounded' style='background:#efefef;'>
+<div class='tm-services-animation uk-panel uk-panel-box uk-text-center uk-border-rounded' style='background:#efefef;border-radius:8px;overflow:hidden'>
     <a href='/services/electrical-stimulation/' class='g5-hover-color-white'>
         <div class='uk-text-center ' data-mh='tm-service-title'> Electrical Stimulation </div>
         <div class='uk-panel-teaser uk-margin-top'>
-            <img src='/files/services/electrical-stimulation.jpg' width='' height='' alt='physical therapy Slidell LA' class=''>
+            <img src='/files/services/electrical-stimulation.jpg'  alt='physical therapy Slidell LA' class=''>
         </div>
         <div class=''>
         <p><a href='/services/electrical-stimulation/' target='_parent' class='uk-border-pill tm-skew tm-appt-button-white tm-uppercase uk-button g5-background-success g5-hover-background-primary g5-hover-color-primary g5-color-white g5-transition-half'> <span>Learn More </a></span></p>
@@ -1445,11 +1458,11 @@ Slidell, LA 70458</div></a>
 </li>
 
 <li>
-<div class='tm-services-animation uk-panel uk-panel-box uk-text-center uk-border-rounded' style='background:#efefef;'>
+<div class='tm-services-animation uk-panel uk-panel-box uk-text-center uk-border-rounded' style='background:#efefef;border-radius:8px;overflow:hidden'>
     <a href='/services/workers-compensation-physical-therapy-slidell-la/' class='g5-hover-color-white'>
         <div class='uk-text-center ' data-mh='tm-service-title'> Workers' Compensation </div>
         <div class='uk-panel-teaser uk-margin-top'>
-            <img src='/files/services/workers-compensation.jpg' width='' height='' alt='physical therapy Slidell LA' class=''>
+            <img src='/files/services/workers-compensation.jpg'  alt='physical therapy Slidell LA' class=''>
         </div>
         <div class=''>
         <p><a href='/services/workers-compensation-physical-therapy-slidell-la/' target='_parent' class='uk-border-pill tm-skew tm-appt-button-white tm-uppercase uk-button g5-background-success g5-hover-background-primary g5-hover-color-primary g5-color-white g5-transition-half'> <span>Learn More </a></span></p>
@@ -1546,7 +1559,7 @@ Slidell, LA 70458</div></a>
                 <p>Reducing pain, swelling, and inflammation are common goals in this phase of recovery. Injury protection, elevation, appropriate medications, compression, and patient education are important.</p>
             </li>
             <!-- <li class='uk-width-medium-1-3'><img src="https://blogsdir.imgix.net/1855/files/icons/recovery/step-1.svg" alt="physical therapy Slidell LA"></li> -->
-            <li class='uk-width-medium-1-3'><img src="/files/services/pain-relief.jpg" class="uk-border-rounded" alt="physical therapy Slidell LA"></li>
+            <li class='uk-width-medium-1-3'><img src="/files/services/pain-relief.jpg" class="uk-border-rounded" alt="physical therapy Slidell LA" style="border-radius:8px" /></li>
         </ul>
     </li>
     <li>
@@ -1556,7 +1569,7 @@ Slidell, LA 70458</div></a>
                 <p>Pain-free passive, manual therapy, active range of motion, and cardiorespiratory exercises, are indicated here. Education about pain and a positive attitude may help.</p>
             </li>
             <!-- <li class='uk-width-medium-1-3'><img src="https://blogsdir.imgix.net/1855/files/icons/recovery/step-2.svg" alt="physical therapy Slidell LA"></li> -->
-            <li class='uk-width-medium-1-3'><img src="/files/services/therapeutic-exercise.jpg" class="uk-border-rounded" alt="physical therapy Slidell LA"></li>
+            <li class='uk-width-medium-1-3'><img src="/files/services/therapeutic-exercise.jpg" class="uk-border-rounded" alt="physical therapy Slidell LA" style="border-radius:8px" /></li>
         </ul>
     </li>
     <li>
@@ -1566,7 +1579,7 @@ Slidell, LA 70458</div></a>
                 <p>Progressive loading of healing soft tissues, the reintroduction of low-stress neuromuscular reeducation, balance training, and basic functional activities are part of this rehabilitation phase.</p>
             </li>
             <!-- <li class='uk-width-medium-1-3'><img src="https://blogsdir.imgix.net/1855/files/icons/recovery/step-3.svg" alt="physical therapy Slidell LA"></li> -->
-            <li class='uk-width-medium-1-3'><img src="/files/services/strength-conditioning.jpg" class="uk-border-rounded" alt="physical therapy Slidell LA"></li>
+            <li class='uk-width-medium-1-3'><img src="/files/services/strength-conditioning.jpg" class="uk-border-rounded" alt="physical therapy Slidell LA" style="border-radius:8px" /></li>
         </ul>
     </li>
     <li>
@@ -1576,7 +1589,7 @@ Slidell, LA 70458</div></a>
                 <p>Progressing strengthening exercises, improving flexibility, and advanced balance exercises are part of phase 4. Resuming functional movement (e.g. sports movements) occurs in this phase.</p>
             </li>
             <!-- <li class='uk-width-medium-1-3'><img src="https://blogsdir.imgix.net/1855/files/icons/recovery/step-4.svg" alt="physical therapy Slidell LA"></li> -->
-            <li class='uk-width-medium-1-3'><img src="/files/services/gait-balance-training.jpg" class="uk-border-rounded" alt="physical therapy Slidell LA"></li>
+            <li class='uk-width-medium-1-3'><img src="/files/services/gait-balance-training.jpg" class="uk-border-rounded" alt="physical therapy Slidell LA" style="border-radius:8px" /></li>
         </ul>
     </li>
     <li>
@@ -1586,7 +1599,7 @@ Slidell, LA 70458</div></a>
                 <p>Functional movements are progressed, a controlled re-introduction to sports or challenging environments is initiated. Continued strengthening, flexibility, balance, endurance, and goal-specific training occurs during this phase. Education and future injury prevention are discussed.</p>
             </li>
             <!-- <li class='uk-width-medium-1-3'><img src="https://blogsdir.imgix.net/1855/files/icons/recovery/step-5.svg" alt="physical therapy Slidell LA"></li> -->
-            <li class='uk-width-medium-1-3'><img src="/files/services/recovery-prevention.jpg" class="uk-border-rounded" alt="physical therapy Slidell LA"></li>
+            <li class='uk-width-medium-1-3'><img src="/files/services/recovery-prevention.jpg" class="uk-border-rounded" alt="physical therapy Slidell LA" style="border-radius:8px" /></li>
         </ul>
     </li>
 </ul>
@@ -1700,7 +1713,14 @@ Slidell, LA 70458</div></a>
     <!-- MOBILE COMPARISON CHART -->
     <div class="uk-visible-small">
         <style>
-            .tm-mobile-compare { padding: 0 8px; }
+            .tm-mini-compare{background:#fff;border-radius:12px;padding:4px 8px;box-shadow:0 2px 10px rgba(0,0,0,0.08);margin-top:14px}
+.tm-comp-table{width:100%;border-collapse:collapse}
+.tm-comp-table td,.tm-comp-table th{padding:4px 2px;text-align:center;border-bottom:1px solid #f5f5f5}
+.tm-comp-table .tm-comp-label{text-align:left;font-size:11px;color:#333;padding:4px 4px}
+.tm-comp-table .tm-comp-icon{width:36px}
+.tm-comp-table tr:last-child td{border-bottom:none}
+.tm-comp-table thead th{padding:4px 2px 6px;border-bottom:2px solid #eee}
+.tm-mobile-compare { padding: 0 8px; }
             .tm-mobile-bratton { 
                 background: #fff; border-radius: 16px; 
                 padding: 20px 16px; margin-bottom: 14px;
@@ -1751,81 +1771,7 @@ Slidell, LA 70458</div></a>
                 <div class="tm-check-row"><span class="tm-check-icon"><i class="uk-icon-check-circle-o uk-icon-medium" style="color:#22b14c"></i></span> Mulligan & Cupping Treatments</div>
                 <div class="tm-check-row"><span class="tm-check-icon"><i class="uk-icon-check-circle-o uk-icon-medium" style="color:#22b14c"></i></span> Affordable Cash & Payment Plan Options</div>
             </div>
-            <div class="tm-skinny-bars">
-                <div class="tm-skinny-bar corporate">
-                    <h4>CORPORATE</h4>
-                    <div class="tm-x-row"><i class="uk-icon-times-circle-o uk-icon-medium" style="color:#be1e2d"></i> Warm, Caring</div>
-                    <div class="tm-x-row"><i class="uk-icon-times-circle-o uk-icon-medium" style="color:#be1e2d"></i> Excellent Service</div>
-                    <div class="tm-x-row"><i class="uk-icon-times-circle-o uk-icon-medium" style="color:#be1e2d"></i> One-on-One</div>
-                    <div class="tm-x-row"><i class="uk-icon-times-circle-o uk-icon-medium" style="color:#be1e2d"></i> Hands-On</div>
-                    <div class="tm-x-row"><i class="uk-icon-question-circle-o uk-icon-medium" style="color:#2257A6"></i> Dry Needling</div>
-                    <div class="tm-x-row"><i class="uk-icon-times-circle-o uk-icon-medium" style="color:#be1e2d"></i> Orthopedic</div>
-                    <div class="tm-x-row"><i class="uk-icon-question-circle-o uk-icon-medium" style="color:#2257A6"></i> Senior Care</div>
-                    <div class="tm-x-row"><i class="uk-icon-question-circle-o uk-icon-medium" style="color:#2257A6"></i> McKenzie</div>
-                    <div class="tm-x-row"><i class="uk-icon-question-circle-o uk-icon-medium" style="color:#2257A6"></i> Mulligan</div>
-                    <div class="tm-x-row"><i class="uk-icon-times-circle-o uk-icon-medium" style="color:#be1e2d"></i> Affordable</div>
-                </div>
-                <div class="tm-skinny-bar hospital">
-                    <h4>HOSPITAL</h4>
-                    <div class="tm-x-row"><i class="uk-icon-times-circle-o uk-icon-medium" style="color:#be1e2d"></i> Warm, Caring</div>
-                    <div class="tm-x-row"><i class="uk-icon-times-circle-o uk-icon-medium" style="color:#be1e2d"></i> Excellent Service</div>
-                    <div class="tm-x-row"><i class="uk-icon-times-circle-o uk-icon-medium" style="color:#be1e2d"></i> One-on-One</div>
-                    <div class="tm-x-row"><i class="uk-icon-times-circle-o uk-icon-medium" style="color:#be1e2d"></i> Hands-On</div>
-                    <div class="tm-x-row"><i class="uk-icon-times-circle-o uk-icon-medium" style="color:#be1e2d"></i> Dry Needling</div>
-                    <div class="tm-x-row"><i class="uk-icon-question-circle-o uk-icon-medium" style="color:#2257A6"></i> Orthopedic</div>
-                    <div class="tm-x-row"><i class="uk-icon-question-circle-o uk-icon-medium" style="color:#2257A6"></i> Senior Care</div>
-                    <div class="tm-x-row"><i class="uk-icon-question-circle-o uk-icon-medium" style="color:#2257A6"></i> McKenzie</div>
-                    <div class="tm-x-row"><i class="uk-icon-times-circle-o uk-icon-medium" style="color:#be1e2d"></i> Mulligan</div>
-                    <div class="tm-x-row"><i class="uk-icon-question-circle-o uk-icon-medium" style="color:#2257A6"></i> Affordable</div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-</section>
-<section id="tm-insurance" class='uk-block'>
-	<div class="uk-container uk-container-center tm-padding-large-all">
-		<div class="uk-grid uk-grid-divider uk-flex uk-flex-middle uk-width-small-1-1 uk-width-1-1 uk-margin-remove" data-uk-grid-margin>
-			<div class='uk-width-large-1-1 uk-width-medium-1-1 uk-text-center'>
-				<!-- <div><img src="/files/icons/insurance-page.svg" alt="physical therapy Slidell LA" width='75' height='auto'></div> -->
-        <h1 class='uk-h1 g5-color-success' style='line-height: 1em'><span class="uk-h2 uk-display-block g5-color-warning"> We Accept </span> Many Major Insurance Plans</h1>
-			</div>
-			<div class='uk-width-large-1-1 uk-width-medium-1-1'>
-				<div class="uk-grid uk-grid-width-large-1-4 uk-grid-width-medium-1-2 uk-grid-width-small-1-2 uk-flex-wrap uk-flex uk-flex-middle uk-flex-center  uk-margin-remove" data-uk-grid-margin>
-					<div>
-						<a href="#" class='uk-display-block g5-hover-float-shadow'><img src="/files/insurance/bcbs-logo.svg" width="250" alt="physical therapy Slidell LA" class="uk-align-center uk-display-block"></a>
-					</div>
-          <div>
-						<a href="#" class='uk-display-block g5-hover-float-shadow'><img src="/files/insurance/tricare.svg"width="250" alt="physical therapy Slidell LA" class="uk-align-center uk-display-block"></a>
-					</div>
-          <div>
-						<a href="#" class='uk-display-block g5-hover-float-shadow'><img src="/files/insurance/workers-comp.svg" width="250" alt="physical therapy Slidell LA" class="uk-align-center uk-display-block"></a>
-					</div>
-          <div>
-						<a href="#" class='uk-display-block g5-hover-float-shadow'><h2>Self-pay</h2></a>
-					</div>
-
-
-					<div>
-						<a href="#" class='uk-display-block g5-hover-float-shadow'><img src="/files/insurance/humana.svg" width="250" alt="physical therapy Slidell LA" class="uk-align-center uk-display-block"></a>
-					</div>
-
-					<div>
-						<a href="#" class='uk-display-block g5-hover-float-shadow'><img src="/files/insurance/medicare-in.svg" width="250" alt="physical therapy Slidell LA" class="uk-align-center uk-display-block"></a>
-					</div>
-
-					
-
-					
-
-				</div>
-				<p class="uk-text-center uk-text-bold uk-margin-remove">If you don’t see your plan listed, please give us a call.</p>	
-				<p class="uk-text-center uk-margin-remove">We make every effort to verify your insurance benefits before your first visit with us.</p>	
-			</div>
-			<div class="uk-width-1-1">
-				<h3 class="uk-text-center">No Referral, No Problem - We Can See Patients Without a Physician’s Prescription</h3>
-			</div>
-		</div>	</div>
+            
 </section>
 
 
